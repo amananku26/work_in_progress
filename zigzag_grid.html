@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zig-zag(grid)</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                            
+            }
+            body{
+                background-color: black;
+                margin-left: 280px;
+            }
+            .class1{
+                height: 100%;
+                width: 80%;
+                background-color: white ;
+                
+             }
+            .box1{
+                display: grid;
+                grid-gap: 35px;
+                grid-template-columns: 150px 150px 150px 150px;
+                grid-template-rows: 100px 100px 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+                padding-top: 25px;
+                border-radius: 15px;
+                padding-left: 150px;
+                padding-top: 200px;
+                
+            } 
+            .box1 div{
+                background: teal;
+                border-radius: 5px;
+
+            }  
+            #id1{
+                grid-area: 1 / 2 / span 1 / span 2;
+                
+            }
+            #id2{
+                grid-area: 2 / 1 / span 1 / span 2;
+            }
+            #id3{
+                grid-area: 3 / 3 / span 1 / span 2;
+            }
+           
+           
+            
+            
+           
+        </style>
+    </head>
+    <body>
+       <div class="class1">
+           <div class="box1">
+           <div></div>
+           <div id="id1"></div>
+           <div></div>
+           <div></div>
+           <div id="id2"></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div id="id3"></div>
+          </div>
+       </div>
+          
+        
+        
+    </body>
+    </html>
